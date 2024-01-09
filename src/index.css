@@ -1,7 +1,35 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .task {
   display: flex;
   width: 500px;
   justify-content: space-between;
+}
+
+.buttonMenu {
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 2px solid blue;
+  font-size: 18pt;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.buttonDelete {
+  background-color: rgb(53, 103, 240);
+  color: aliceblue;
+  font-size: 12pt;
+  padding: 6px 14px;
+  border-radius: 12px;
+  border-color: transparent;
 }
 
 

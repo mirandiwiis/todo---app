@@ -1,45 +1,26 @@
-
+import { Task } from './components/Task';
 import './App.css'
 
-const Task = () => {
-  return (
-    <div>
-      <input type="checkbox" />
-      <strong>Tarea 1</strong>
-      <button>Delete</button>
-    </div>
-  )
-}
 
 function App() {
-
 
   return (
     <>
       <div className='main'>
         <div className='menu'>
-          <button>ALL</button>
-          <button>Completed</button>
-          <button>Pending</button>
+          <button className='buttonMenu'>All</button>
+          <button className='buttonMenu'>Completed</button>
+          <button className='buttonMenu'>Pending</button>
         </div>
 
         <div className='addTask'>
           <input type="text" placeholder='Escribe algo'/>
-          <button>Add</button>
+          <button className='buttonDelete'>Add</button>
         </div>
 
-        <div className='task'>
-          <input type="checkbox" />
-          <strong>Tarea 1</strong>
-          <button>Delete</button>
-        </div>  
+        <Task></Task>
+        <Task></Task>
 
-
-        <div className='task'>
-          <input type="checkbox" />
-          <strong>Tarea 2</strong>
-          <button>Delete</button>
-        </div>
       </div>
     </>
   )
